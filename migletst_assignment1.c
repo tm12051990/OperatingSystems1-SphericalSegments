@@ -76,24 +76,24 @@ int main(void) {
         /* Print results for the current segment */
 
         printf("Computed values for the segment %d: \n", i);
-        printf("Top radius (a)       = %.4f\n", a);
-        printf("Bottom radius (b)    = %.4f\n", b);
-        printf("Segment height (h)   = %.4f\n", h);
-        printf("Top Surface Area     = %.4f\n", topSA);
-        printf("Bottom Surface Area  = %.4f\n", bottomSA);
-        printf("Lateral surface area = %.4f\n", lateralSA);
-        printf("Total surface area   = %.4f\n", totalSA);
-        printf("Volume               = %.4f\n", volume);
+        printf("Top radius (a)       = %.2f\n", a);
+        printf("Bottom radius (b)    = %.2f\n", b);
+        printf("Segment height (h)   = %.2f\n", h);
+        printf("Top Surface Area     = %.2f\n", topSA);
+        printf("Bottom Surface Area  = %.2f\n", bottomSA);
+        printf("Lateral surface area = %.2f\n", lateralSA);
+        printf("Total surface area   = %.2f\n", totalSA);
+        printf("Volume               = %.2f\n", volume);
 
         tsaSum += totalSA;
         volumeSum += volume;
     }
-    avgSA = totalSA / n;
-    avgVol = volume / n;
+    tsaSum = totalSA / n;
+    volumeSum = volume / n;
 
     printf("\nAverages across %d segments: \n", n);
-    printf("Average Surface Area: %.4f\n", avgSA);
-    printf("Average Volume: %.4f\n", avgVol);
+    printf("Average Surface Area: %.2f\n", avgSA);
+    printf("Average Volume: %.2f\n", avgVol);
 
     return 0;
 }
