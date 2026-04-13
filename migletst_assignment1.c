@@ -1,3 +1,46 @@
+/*
+Program: Spherical Segment Calculator
+    Author: Tony
+    Description:
+    This program reads an integer n between 2 and 10 inclusive, then reads
+    the dimensions for n spherical segments. For each valid spherical segment,
+    it computes:
+        - top radius a
+        - bottom radius b
+        - segment height h
+        - top surface area
+        - bottom surface area
+        - lateral surface area
+        - total surface area
+        - volume
+        - average volume per segment
+        - average surface area per segment
+
+    At the end, it reports the average total surface area and average volume.
+
+    Input variables:
+        n               number of spherical segments to evaluate
+        R               radius of the sphere
+        h_a             height of the top area
+        h_b             height of the bottom area
+
+    Computed variables:
+        a               radius of the top surface
+        b               radius of the bottom surface
+        h               height of the segment
+        topSA           area of the top surface of the segment
+        bottomSA        area of the bottom surface  of the segment
+        lateralSA       lateral surface area of the segment
+        totalSA         total surface area of the segment
+        volume          volume of the spherical segment
+
+    Accumulated variables:
+        totalAreaSum    sum of all total surface areas
+        volumeSum       sum of all volumes
+        avgTotalArea    average total surface area per segment
+        avgVolume       average volume per segment
+*/
+
 #include <stdio.h>
 #include <math.h>
 
