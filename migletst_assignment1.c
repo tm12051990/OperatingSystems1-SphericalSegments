@@ -90,8 +90,8 @@ int main(void) {
         tsaSum += totalSA;
         volumeSum += volume;
     }
-    tsaSum = totalSA / n;
-    volumeSum = volume / n;
+    avgSA = tsaSum / n;
+    avgVol = volumeSum / n;
 
     printf("\nAverages across %d segments: \n", n);
     printf("Average Surface Area: %.2f\n", avgSA);
