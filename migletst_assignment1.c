@@ -54,6 +54,8 @@ int main(void) {
             printf("\nPlease enter the bottom height of the sphere segment: ");
             scanf("%lf", &h_b);
 
+            printf("R = %.2f, h_a = %.2f, h_b = %.2f\n", R, h_a, h_b);
+
             if (R <= 0 || h_a <= 0 || h_b <= 0 || h_a > R || h_b > R || h_a < h_b) {
                 printf("\nInput invalid. \n");
                 printf("Radius, top height, and bottom height must be positive. \n");
